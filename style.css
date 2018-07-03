@@ -28,7 +28,8 @@ article {
 }
 
 nav {
-background-color: #A295F3
+background-color: #A295F3;
+  /* agregar con los menus de navegacion de la w3schools */
 }
 
 section {
