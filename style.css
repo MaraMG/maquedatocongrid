@@ -35,6 +35,9 @@ section {
 background-color: #5648A6;
   
   grid-column: 2/ -1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
 }
 
 footer {
@@ -45,4 +48,10 @@ footer {
   width: 100%;
   
   grid-column: 1/-1;
+}
+
+section > h2 {
+  text-align: center;
+background-color: purple;
+  grid-column:1 /-1;
 }
