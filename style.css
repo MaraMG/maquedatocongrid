@@ -1,6 +1,5 @@
 *{ 
   margin: 0;
-  padding: 0;
   border: 0;
 }
 
@@ -9,9 +8,15 @@ background-color: orchid;
   
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
+ 
   grid-auto-rows: minmax(100px, auto);
+
 }
+
+* {
+  box-sizing: border-box;
+}
+
 
 header {
 background-color: #823B93;
@@ -25,11 +30,15 @@ article {
   background-color: #670093;
  border-radius: 10px;
  padding: 15px; 
+
 }
 
 nav {
 background-color: #A295F3;
   /* agregar con los menus de navegacion de la w3schools */
+   width: 150%;
+    float: left;
+   padding: 15px;
 }
 
 section {
@@ -38,7 +47,10 @@ background-color: #5648A6;
   grid-column: 2/ -1;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
+  padding: 15px;
+  width: 200%;
+  float: left
+  
 }
 
 footer {
@@ -47,6 +59,7 @@ footer {
   bottom: 0;
   text-align: center;
   width: 100%;
+  height: 50px;
   
   grid-column: 1/-1;
 }
@@ -56,3 +69,12 @@ section > h2 {
 background-color: purple;
   grid-column:1 /-1;
 }
+
+
+/* Esto es para que sea responsive respecto a otros tamaños de pantalla  */
+
+@media only screen and (max-width: 600px){
+body {
+background-color: cyan}
+}
+
